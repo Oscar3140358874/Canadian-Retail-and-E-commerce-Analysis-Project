@@ -1,0 +1,99 @@
+﻿"Cube Title","Product Id","CANSIM Id",URL,"Cube Notes","Archive Status",Frequency,"Start Reference Period","End Reference Period","Total number of dimensions"
+"Monthly retail trade sales by province and territory","20100056",,"https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=2010005601",1;2,"CURRENT - a cube available to the public and that is current","Monthly","2017-01-01","2026-06-01","4",
+
+"Dimension ID","Dimension name","Dimension Notes","Dimension Definitions"
+"1","Geography",,""
+"2","North American Industry Classification System (NAICS)",,""
+"3","Sales",,""
+"4","Adjustments",,""
+
+"Dimension ID","Member Name","Classification Code","Member ID","Parent Member ID",Terminated,"Member Notes","Member Definitions"
+"1","Canada","[11124]","1","","",,
+"1","Newfoundland and Labrador","[10]","2","1","",,
+"1","Prince Edward Island","[11]","3","1","",,
+"1","Nova Scotia","[12]","4","1","",,
+"1","New Brunswick","[13]","5","1","",,
+"1","Quebec","[24]","6","1","",,
+"1","Montréal, Quebec","[462]","7","6","",,
+"1","Quebec, Quebec","[421]","8","6","",,
+"1","Gatineau, Quebec","[24505]","9","6","",,
+"1","Ontario","[35]","10","1","",,
+"1","Toronto, Ontario","[535]","11","10","",,
+"1","Ottawa, Ontario","[35505]","12","10","",,
+"1","Manitoba","[46]","13","1","",,
+"1","Winnipeg, Manitoba","[602]","14","13","",,
+"1","Saskatchewan","[47]","15","1","",,
+"1","Alberta","[48]","16","1","",,
+"1","Calgary, Alberta","[825]","17","16","",,
+"1","Edmonton, Alberta","[835]","18","16","",,
+"1","British Columbia","[59]","19","1","",,
+"1","Vancouver, British Columbia","[933]","20","19","",,
+"1","Yukon","[60]","21","1","",,
+"1","Northwest Territories","[61]","22","1","",,
+"1","Nunavut","[62]","23","1","",,
+"2","Retail trade","[44-45]","1","","",,
+"2","Motor vehicle and parts dealers","[441]","2","1","",,
+"2","Automobile dealers","[4411]","3","2","",,
+"2","New car dealers","[44111]","4","3","",,
+"2","Used car dealers","[44112]","5","3","",,
+"2","Other motor vehicle dealers","[4412]","6","2","",,
+"2","Automotive parts, accessories and tire retailers","[4413]","7","2","",,
+"2","Building material and garden equipment and supplies dealers","[444]","8","1","",,
+"2","Food and beverage retailers","[445]","9","1","",,
+"2","Grocery and convenience retailers","[4451]","10","9","",,
+"2","Supermarkets and other grocery retailers (except convenience retailers)","[44511]","11","10","",,
+"2","Convenience retailers and vending machine operators","[44513]","12","10","",,
+"2","Specialty food retailers","[4452]","13","9","",,
+"2","Beer, wine and liquor retailers","[4453]","14","9","",,
+"2","Furniture, home furnishings, electronics and appliances retailers","[449]","15","1","",,
+"2","Furniture, floor covering, window treatment and other home furnishings retailers","[4491]","16","15","",,
+"2","Furniture retailers","[44911]","17","16","",,
+"2","Floor covering, window treatment and other home furnishing retailers","[44912]","18","16","",,
+"2","Electronics and appliances retailers","[4492]","19","15","",,
+"2","General merchandise retailers","[455]","20","1","",,
+"2","Health and personal care retailers","[456]","21","1","",,
+"2","Gasoline stations and fuel vendors","[457]","22","1","",,
+"2","Clothing, clothing accessories, shoes, jewellery, luggage and leather goods retailers","[458]","23","1","",,
+"2","Clothing and clothing accessories retailers","[4581]","24","23","",,
+"2","Shoe retailers","[4582]","25","23","",,
+"2","Jewellery, luggage and leather goods retailers","[4583]","26","23","",,
+"2","Sporting goods, hobby, musical instrument, book, and miscellaneous retailers","[459]","27","1","",,
+"2","Sporting goods, hobby, musical instrument, book retailers and news dealers","[459A]","28","27","",5,
+"2","Miscellaneous retailers","[459B]","29","27","",5,
+"2","Cannabis retailers","[459993]","30","29","",3,
+"3","Total retail sales","","1","","",,
+"3","Retail e-commerce sales","","2","1","",4,
+"4","Unadjusted","","1","","",,
+"4","Seasonally adjusted","","2","","",,
+
+Symbol Legend
+Description,Symbol
+"not available for a specific reference period","..",
+"less than the limit of detection","<LOD",
+"value rounded to 0 (zero) where there is a meaningful distinction between true zero and the value that was rounded","0s",
+"data quality: excellent","A",
+"data quality: very good","B",
+"data quality: good","C",
+"data quality: acceptable","D",
+"use with caution","E",
+"too unreliable to be published","F",
+"not applicable","...",
+"preliminary","p",
+"revised","r",
+"suppressed to meet the confidentiality requirements of the Statistics Act","x",
+"terminated","t",
+
+"Survey Code","Survey Name"
+"2406","Retail Trade Survey (Monthly)"
+
+"Subject Code","Subject Name"
+"20","Retail and wholesale"
+
+"Note ID",Note
+1,"This table replaces table 20-10-0008."
+2,"Quality indicator: Code A=Excellent. Code B=Very good. Code C=Good. Code D=Acceptable. Code E=Poor, use with caution. Code F=Unreliable (data not published)."
+3,"For periods prior to January 2020, data for this Canadian industry are presented in an unadjusted form, because the seasonal pattern was still developing and seasonal adjustment would have had minimal influence on the data."
+4,"Retail e-commerce sales only include online sales made by Canadian-based retailers. Purchases made by Canadian consumers from foreign-based retailers are excluded."
+5,"The alphanumeric code appearing beside the industry title represents the identification code of an aggregation of North American Industry Classification System (NAICS) industries, whose definition is included in the full classification provided in the definitions, data sources and methods for the statistical program 2406 – Monthly Retail Trade Survey (MRTS)."
+
+"Correction ID","Correction Date","Correction Note"
