@@ -22,19 +22,15 @@ The project uses **Python** for data ingestion and initial inspection, **MySQL**
 
 ### Executive Overview
 
-![Executive Overview](images/KPI_overview.png)
+![Executive Overview](images/KPI%20overview.png)
 
 ### Retail Sales Trends
 
-![Retail Sales Trends](images/retail_trends.png)
-
-### Provincial Retail Sales Ranking
-
-![Provincial Ranking](images/provincial_ranking.png)
+![Retail Sales Trends](images/Retail%20Sales%20Trends.png)
 
 ### E-commerce Analysis
 
-![E-commerce Analysis](images/ecommerce_analysis.png)
+![E-commerce Analysis](images/Canada%20E-commerce%20Sales%20Trend.png)
 
 ---
 
