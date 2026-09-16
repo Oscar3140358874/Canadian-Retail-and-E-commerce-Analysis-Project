@@ -4,9 +4,37 @@
 
 This project analyzes Canadian retail and e-commerce performance from 2019 to 2026 using Statistics Canada data.
 
-The analysis focuses on retail sales trends, provincial comparisons, month-over-month and year-over-year growth, rolling averages, and the changing role of e-commerce in total retail sales.
+The analysis focuses on:
 
-The project uses Python for data ingestion and inspection, MySQL for data cleaning and analysis, and Power BI for dashboard development and visualization.
+- Canadian retail sales trends
+- Provincial retail performance
+- Year-over-Year and Month-over-Month growth
+- 3-month rolling averages
+- Provincial sales rankings
+- Canadian e-commerce sales growth
+- E-commerce share of total retail sales
+
+The project uses **Python** for data ingestion and initial inspection, **MySQL** for data cleaning and analysis, and **Power BI** for dashboard development and visualization.
+
+---
+
+## Dashboard Preview
+
+### Executive Overview
+
+![Executive Overview](images/overview.png)
+
+### Retail Sales Trends
+
+![Retail Sales Trends](images/retail_trends.png)
+
+### Provincial Retail Sales Ranking
+
+![Provincial Ranking](images/provincial_ranking.png)
+
+### E-commerce Analysis
+
+![E-commerce Analysis](images/ecommerce_analysis.png)
 
 ---
 
@@ -26,26 +54,26 @@ This project aims to answer the following questions:
 
 ## Data Source
 
-The data was obtained from Statistics Canada.
+The data was obtained from **Statistics Canada**.
 
 Main dataset:
 
 **Monthly retail trade sales by province and territory**
 
-Statistics Canada table ID:
+Statistics Canada Table ID:
 
 `20-10-0056-01`
 
 The dataset contains monthly retail sales information by:
 
-- Date
+- Reference date
 - Geography
-- Retail sales type
+- Sales type
 - Seasonal adjustment
 - NAICS industry
 - Sales value
 
-For this project, the main analysis focuses on:
+The main retail analysis focuses on:
 
 - Canada
 - Ontario
@@ -70,18 +98,17 @@ The analysis uses:
 - **MySQL**
 - **DataGrip**
 - **Power BI**
-- **Excel / CSV**
-- **Git & GitHub**
+- **CSV / Excel**
+- **Git**
+- **GitHub**
 
 ---
 
 ## Data Collection
 
-Statistics Canada data was downloaded programmatically using Python.
+Statistics Canada data was downloaded programmatically using Python from the official CSV download endpoint.
 
-The raw ZIP file was retrieved from the Statistics Canada CSV download endpoint and extracted for analysis.
-
-Python was also used to inspect:
+Python was used to inspect:
 
 - Dataset dimensions
 - Column names
@@ -96,13 +123,11 @@ Python was also used to inspect:
 
 ## Data Cleaning & Preparation
 
-Several data quality checks were performed before analysis.
-
 ### Missing Values
 
 Missing sales values were investigated by geography.
 
-The highest missing-value rates were concentrated in smaller regions such as:
+The highest missing-value rates were concentrated in smaller regions, including:
 
 - Nunavut
 - Northwest Territories
@@ -113,7 +138,7 @@ The main analysis therefore focuses on larger geographies with more complete dat
 
 ### Data Type Conversion
 
-The `VALUE` field was imported into MySQL as text, so it was converted to a numeric data type before analysis.
+The `VALUE` field was imported into MySQL as text, so it was converted into a numeric type before analysis:
 
 ```sql
 CAST(VALUE AS DECIMAL(15,2))
