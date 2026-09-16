@@ -22,7 +22,7 @@ The project uses **Python** for data ingestion and initial inspection, **MySQL**
 
 ### Executive Overview
 
-![Executive Overview](images/KPI overview.png)
+![Executive Overview](images/`KPI overview`.png)
 
 ### Retail Sales Trends
 
